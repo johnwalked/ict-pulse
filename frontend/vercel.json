@@ -1,0 +1,15 @@
+{
+  "framework": "nextjs",
+  "buildCommand": "npm run build",
+  "outputDirectory": ".next",
+  "env": {
+    "NEXT_PUBLIC_WS_URL": "@ws-url"
+  },
+  "regions": ["iad1"],
+  "functions": {
+    "app/api/ai/route.ts": {
+      "memory": 1024,
+      "maxDuration": 10
+    }
+  }
+}
